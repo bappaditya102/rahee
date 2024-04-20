@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('../css/all.min.css');
+:root {    
+    --body-fonts: "Montserrat", sans-serif; 
+    --black-text: #050608;   
+    --white-text: #ffffff;  
+    --red-bg: #d62c27;
+    --primery-text:#1da8e1;    
+    --secendary-text: #fecb0e;
+    --primery-text-light:#8cc6ee;
+    --navigation-color:#ffcb08;
+    --dark-black:#050608; 
+
+    --fn-10: 10px;
+    --fn-12: 12px;
+    --fn-14: 14px;
+    --fn-16: 16px;    
+    --fn-18: 18px;
+    --fn-20: 20px;
+    --fn-24: 24px;
+    --fn-36: 36px;
+    --fn-48: 48px;
+    --fn-60: 60px;
+    --fn-76: 76px;
+    --fn-87: 87px;
+
+    --light:300;
+    --normal:400;
+    --medium:500;
+    --semi-bold:600;
+    --bold:700;
+
+    --grobal-line-height: 150%;
+
+}
+body{ font-family: var(--body-fonts);}
+.sub-title{ padding: 0; margin: 0; font-size: var(--fn-18); line-height: var(--grobal-line-height); font-weight: var(--normal); color: var(--black-text);}
+.main-title{ padding: 0; margin: 0; font-size: var(--fn-48); line-height: var(--grobal-line-height); font-weight: var(--bold); color: var(--primery-text);}
+.paragraph{ padding: 0; margin: 0; font-size: var(--fn-16); line-height: var(--grobal-line-height); font-weight: var(--normal); color: var(--black-text);}
+/*============Header Section Start Here=================*/
+header{ position: fixed; width: 100%; z-index: 9; top: 15px; transition: .3s; }
+header .navbar{ padding: 0; margin: 0;}
+header .navbar .navbar-brand{ padding: 0; margin: 0;}
+header .navbar .navbar-nav{ line-height: 60px;}
+header .navbar .navbar-nav .nav-link{ padding: 0 14px; margin: 0; font-size: var(--fn-14); color: var(--navigation-color); line-height: var(--grobal-line-height); 
+    transition: all 0.5s;}
+header .navbar .navbar-nav .nav-link:hover{ color: var(--white-text);}
+header .navbar .navbar-nav .nav-link.active{ color: var(--white-text);}
+header .navbar .navbar-nav .nav-link:last-child{ padding-right: 0;}
+
+.navigation.hFixed header { background-color: #1e1912; top: 0; padding: 5px 0; }
+
+/*==============Hero Banner Section Start here=========================*/
+.hero-banner{ position: relative; padding: 0; margin: 0;}
+.hero-banner h2{ position: absolute; top: 35%; left: 0; right: 0; padding: 0; margin: 0; text-align: center; font-size: var(--fn-76); font-weight: var(--bold);
+color: var(--secendary-text); line-height: auto;}
+.hero-banner span{ position: absolute; bottom: 40px; right: 99px; text-align: right; color: var(--white-text); font-size: var(--fn-14); font-weight: var(--light);}
+.hero-banner span:after{ position: absolute; content: ''; border-top: solid 1px var(--secendary-text); top: -15px; right: 0; width: 130px;}
+/*======================About us section start here===============================*/
+.about-section{ padding: 0; margin: 0;}
+.about-section .about-content{ padding:60px 0 0 99px; margin: 0;}
+.about-section .about-content .box-content{ background: var(--secendary-text); border:solid 10px var(--white-text); border-top: none; border-left: none; 
+    padding: 40px 30px; width: 640px; position: relative; z-index: 2; margin-top: 15px;
+}
+.about-section .video-section{ position: relative; padding: 0; margin: 0;}
+.about-section .video-section video{ max-width: 100%;}
+.about-section .video-section button{ position: absolute; top: 45%; left: 45%; background: rgba(255,255,255,0.5);
+ width: 102px; height: 102px; border-radius: 100px; border: none;}
+/*=======================Record Section Start Here====================*/
+.record{ padding: 0; margin: 60px 0 0 0;}
+.record ul{ list-style-type: none; padding: 0; margin: 0; display: flex; justify-content: space-between; text-align: center;}
+.record ul li{ padding: 0; margin: 0;}
+.record ul li span{ display: block; font-size: var(--fn-18); color: var(--black-text); font-weight: var(--normal);}
+.record ul li span.counts{ font-size: var(--fn-60); color: var(--primery-text); font-weight: var(--light);}
+/*======================chairman section start here=========================*/
+.charirman-massage{ padding: 0; margin: 50px 0 0 0;}
+.charirman-massage .chairman-picture{ padding: 0; margin: 0;}
+.charirman-massage .chairman-picture img{ max-width: 100%; height: auto;}
+.charirman-massage .charirman-data{ padding: 99px 99px 0 0;}
+.charirman-massage .charirman-data .paragraph{ margin-top: 50px;}
+/*======================Core area of Business start here========================*/
+.core-business{ padding: 0; margin: 0;}
+.core-business .business-data{ background-image: url(../images/business-2.jpg); background-repeat: repeat; background-size: cover; 
+padding: 75px 50px 35px 99px; min-height: 540px; max-height: 540px;}
+.core-business .business-data .main-title{ color: var(--white-text);}
+.core-business .business-data .paragraph{ color: var(--white-text); margin-top: 50px; margin-bottom: 50px;}
+.core-business .business-data a.read-more{ display: inline-block; border: solid 1px var(--white-text); border-radius: 50px; font-size: var(--fn-14); font-weight: var(--normal);
+padding: 3px 3px 3px 10px; line-height: 37px; color: var(--white-text); text-decoration: none; transition: .3s;}
+.core-business .business-data a.read-more span{ width: 45px; line-height: 37px; background: var(--secendary-text); display: inline-block; border-radius: 50px; 
+    text-align: center; margin-left: 14px;}
+.core-business .business-data a.read-more:hover{ background-color: var(--secendary-text); }
+.core-business .bridgs{
+    background-image: url(../images/business-1.jpg); background-repeat: repeat; background-size: cover; 
+padding: 130px 99px 35px 75px; min-height: 540px; max-height: 540px;
+}
+
+.core-business .bridgs .title-section{ padding: 0; margin: 0; position: relative;}
+.core-business .bridgs .title-section h2{ font-size: var(--fn-87); color: var(--secendary-text); font-weight: var(--bold); line-height:var(--fn-87);}
+.core-business .bridgs .title-section .view-map{ position: absolute; bottom: 0;}
+.core-business .bridgs .title-section .view-map span{ margin-right: 10px;}
+.core-business .bridgs .title-section .view-map span i{ font-size: 20px; line-height: 34px; color: var(--secendary-text);}
+.core-business .bridgs .title-section .view-map a{ font-size: var(--fn-12); color: var(--white-text); padding: 0; margin: 0; text-decoration: none;}
+
+.core-business .bridgs .info{ padding: 0; margin: 0; position: relative;}
+.core-business .bridgs .info::before{ position: absolute; content: ''; background: var(--white-text); width: 1px; height: 100%;}
+
+.core-business .bridgs .info ul{ width: 153px; padding-left: 30px; list-style-type: none; margin-top: 15px;}
+.core-business .bridgs .info ul::before{ position: absolute; content: ''; background: var(--white-text); width: 30px; height: 1px; top: 0; left: -15px;}
+.core-business .bridgs .info ul::after{ position: absolute; content: ''; background: var(--white-text); width: 30px; height: 1px; bottom:0; left: -15px;}
+
+.core-business .bridgs .info ul li{ position: relative; margin-bottom: 25px;}
+.core-business .bridgs .info ul li:after{ position: absolute; content: ''; background: var(--white-text); width: 10px; height: 1px; top: 10px; left: -30px;}
+.core-business .bridgs .info ul li a{ font-size: 16px; line-height: var(--grobal-line-height); font-weight: var(--normal); 
+text-decoration: none; color: var(--secendary-text);
+}
+.core-business .bridgs .info ul li a:hover{ color: var(--white-text);}
+.core-business .bridgs .info ul li a.active{ color: var(--white-text);}
+
+/*================================Projects section start here=============================*/
+.landmark-project{ padding: 0; margin: 75px 0 0 0; position: relative;}
+.landmark-project .title-col{ padding: 0 99px;}
+.landmark-project .tab-section .nav-tabs{ position: absolute; right: 99px; top: 35px; border: none;}
+.landmark-project .tab-section .nav-tabs .nav-link{ font-size: var(--fn-16); color: var(--black-text); padding: 15px 30px;}
+.landmark-project .tab-section .nav-tabs .nav-item.show .nav-link, .landmark-project .tab-section .nav-tabs .nav-link.active {
+    color: var(--black-text);  background-color: var(--secendary-text); border-color: transparent;
+}
+
+.landmark-project .tab-section{ padding: 245px 99px 0 99px; margin: 40px 0 0 0; background-image: url(../images/project.jpg); 
+background-repeat: no-repeat; background-size: cover;}
+.landmark-project .tab-section h4{ font-size: var(--fn-36); line-height: var(--grobal-line-height); color: var(--white-text); padding: 0; 
+margin: 0 0 20px 0; font-weight: var(--bold);
+}
+.landmark-project .tab-section p{ font-size: var(--fn-18); line-height: var(--grobal-line-height); color: var(--white-text); 
+padding: 0; margin: 0 0 20px 0; font-weight: var(--normal);
+}
+.landmark-project .tab-section .list-of-project{ list-style-type: none; display: flex; justify-content: space-between; margin-top: 90px;}
+.landmark-project .tab-section .list-of-project li{ width: 100%; padding: 20px; margin:0 10px 15px 0; transition: all 0.5s;}
+.landmark-project .tab-section .list-of-project a{ text-decoration: none;}
+.landmark-project .tab-section .list-of-project a span{ display: block;}
+.landmark-project .tab-section .list-of-project a span.number{ font-size: var(--fn-48); line-height: var(--fn-48); color: var(--white-text); 
+font-weight: var(--light); margin-bottom: 10px;}
+.landmark-project .tab-section .list-of-project a span.name{ font-size: var(--fn-14); line-height: var(--grobal-line-height); color: var(--white-text);
+    font-weight: var(--light);}
+.landmark-project .tab-section .list-of-project li a:hover span.number{ color: var(--secendary-text);}
+.landmark-project .tab-section .list-of-project li:hover{ background: rgba(0,0,0,0.5);}
+.landmark-project .tab-section .list-of-project li.active{ background: rgba(0,0,0,0.5);}  
+.landmark-project .tab-section .list-of-project li.active a span.number{ color: var(--secendary-text);}
+/*==================Feature Article Section Start Here=====================*/
+.feature-article{padding: 90px 0 0 0;}
+.feature-article .title-col{ margin-bottom: 30px;}
+.feature-article span{ margin: 1rem 0 0 1rem; padding:0 17px; font-size: var(--fn-12); line-height: 26px; color: var(--dark-black);
+ background: var(--primery-text-light); width: max-content; border-radius: 20px;}
+ .feature-article .card-text{ font-size: var(--fn-14); line-height: 23px; color: var(--black-text);}
+ .feature-article span.active-item{ background: var(--secendary-text);}
+ .feature-article .card-title{ font-size: var(--fn-20); font-weight: var(--normal); color: var(--black-text); padding: 0; margin: 0;}
+ .feature-article .common-box-article{ margin: 0 0 0 1rem;}
+ .feature-article .common-box-article .date{ font-size: var(--fn-16); font-weight: var(--bold); color: var(--primery-text);}
+ .feature-article .common-box-article .buttons{ background: #e9e9e9; height: 45px; width: 50px; position: relative; overflow: hidden; transition: all 0.5s;}
+ .feature-article .common-box-article .buttons::after{ position: absolute; content: ''; left: -2px; top: -32px; width: 37px;
+     height: 82px; background: var(--white-text); transform: rotate(42deg);
+ }
+ .feature-article .common-box-article .buttons a{ position: absolute; right: 5px; line-height: 63px; color: var(--primery-text);}
+ .feature-article .common-box-article .buttons a:hover{ color: var(--white-text);}
+ .feature-article .common-box-article .buttons:hover{ background: var(--secendary-text);}
+ .more-news{ margin-top: 34px; text-align: right;}
+ .more-news p{ font-size: var(--fn-14); color: var(--black-text); padding: 0; margin: 0;}
+ /*===================Client and Partner start here================*/
+ .client-partner{ margin: 75px 0;}
+ .client-partner ul{ display: flex; justify-content: center; align-items: center; list-style-type: none; margin-top: 40px;}
+ .client-partner ul li{ margin: 0 40px;}
+
+ /*==================footer section start here===================================*/ 
+.footer{ padding: 75px; margin: 0; background-image: url(../images/footer-bg.jpg); background-repeat: no-repeat; background-size: cover;}
+.footer h4{ font-size: var(--fn-18); line-height: var(--grobal-line-height); color: var(--navigation-color); transition: all 0.5s;
+    font-weight: var(--normal); text-decoration: none; padding: 0; margin: 0 0 20px 0;}
+.footer .footer-links{ padding: 0; margin: 30px 0 0 0;}
+.footer .footer-links ul{ list-style-type: none; padding: 0; margin: 0;}
+.footer .footer-links ul li{ line-height: var(--grobal-line-height); padding-bottom: 10px;}
+.footer .footer-links ul li a{ font-size: var(--fn-18); line-height: var(--grobal-line-height); color: var(--navigation-color); transition: all 0.5s;
+font-weight: var(--normal); text-decoration: none;}
+.footer .footer-links ul li a:hover{ color: var(--white-text);}
+
+.footer .social-links{ padding: 0; margin: 30px 0 0 0;}
+.footer .social-links ul{ list-style-type: none; padding: 0; margin: 0;}
+.footer .social-links li{ display: inline-block; margin: 0 5px;}
+.footer .social-links li:first-child{ margin-left: 0;}
+.footer .social-links li a{ border: solid 1px var(--navigation-color); display: flex; justify-content: center; align-items: center; border-radius: 50px; width: 45px; 
+    height: 45px; color: var(--navigation-color); line-height: 45px; text-align: center; text-decoration: none; transition: all 0.5s;}
+.footer .social-links li i{ font-size: 30px;}
+.footer .social-links li a:hover{ color: var(--white-text); border: solid 1px var(--white-text);}
+
+.footer .footer-contact{ padding: 0; margin: 30px 0 0 0;}
+.footer .footer-contact .accordion-button{ font-size: var(--fn-14); background-color: var(--black-text); color: var(--secendary-text); font-weight: var(--normal);}
+.footer .footer-contact .accordion-button::after{ background-image: url(../images/down-arrow.jpg); width: 15px; height: 9px; background-size: 15px;}
+.footer .footer-contact .accordion-button:not(.collapsed)::after{ background-image: url(../images/down-arrow.jpg);}
+.footer .footer-contact .accordion-item{ border: none; background-color: var(--black-text); margin-bottom: 1px;}
+.footer .footer-contact .accordion-body{ margin: 0; padding-top: 0;}
+.footer .footer-contact .accordion-body ul{ list-style-type: none; padding: 0; margin: 0;}
+.footer .footer-contact .accordion-body ul li{ line-height: var(--grobal-line-height); margin-bottom: 10px;}
+.footer .footer-contact .accordion-body ul li a{ font-size: var(--fn-14); line-height: var(--grobal-line-height); color: var(--navigation-color); transition: all 0.5s;
+    font-weight: var(--normal); text-decoration: none;}
+.footer .footer-contact .accordion-body ul li a span{ margin-right: 10px;}
+.footer .footer-contact .accordion-body ul li a:hover{ color: var(--white-text);}
+
+

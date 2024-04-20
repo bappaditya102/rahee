@@ -1,0 +1,102 @@
+:root {    
+    --body-fonts: "Montserrat", sans-serif; 
+    --black-text: #050608;   
+    --white-text: #ffffff;  
+    --red-bg: #d62c27;
+    --primery-text:#1da8e1;    
+    --secendary-text: #fecb0e;
+    --primery-text-light:#8cc6ee;
+    --navigation-color:#ffcb08;
+    --dark-black:#050608;   
+
+    --fn-10: 10px;
+    --fn-12: 12px;
+    --fn-14: 14px;
+    --fn-16: 16px;    
+    --fn-18: 18px;
+    --fn-20: 20px;
+    --fn-24: 24px;
+    --fn-36: 36px;
+    --fn-48: 48px;
+    --fn-60: 60px;
+    --fn-76: 76px;
+    --fn-87: 87px;
+
+    --light:300;
+    --normal:400;
+    --medium:500;
+    --semi-bold:600;
+    --bold:700;
+
+    --grobal-line-height: 150%;
+
+}
+@media(max-width:1299px){
+.about-section .about-content{ padding-left: 65px;}
+.charirman-massage .charirman-data{ padding-right: 65px;}
+.core-business .bridgs .title-section h2{ font-size: var(--fn-48);}
+.about-section .about-content .box-content{padding: 30px;}
+.landmark-project .tab-section{ padding: 245px 65px 0 65px;}
+.main-title{ font-size: var(--fn-36);}
+.footer{ padding: 75px 0;}
+.hero-banner h2{ font-size: var(--fn-48);}
+}
+@media(max-width:1199px){
+.main-title{ font-size: var(--fn-36);}
+.about-section .about-content .box-content{ width: 550px;}
+.about-section .about-content .box-content { padding: 20px;}
+.record ul li span.counts{ font-size: var(--fn-36);}
+.landmark-project .tab-section ul.list-of-project{ padding-left: 0;}
+.client-partner .partner-logo img{ max-width: 100%;}
+.footer img{ max-width: 100%;}
+}
+@media(max-width:1025px){
+.core-business .business-data{padding-left: 65px;}
+.paragraph{ font-size: var(--fn-14);}    
+.landmark-project .tab-section h4{ font-size: var(--fn-20);}
+.landmark-project .tab-section p{ font-size: var(--fn-16); margin-bottom: 7px;}
+.main-title {  font-size: var(--fn-24);}
+}
+@media(max-width:991px){
+.about-section .about-content .box-content{ width: 350px;}
+.charirman-massage .charirman-data .paragraph{margin-top: 10px;}
+.charirman-massage .charirman-data{ padding-top: 10px;}
+.core-business .business-data{ padding-top: 35px;}
+.feature-article .common-box-article .date{ font-size: var(--fn-14);}
+.footer .social-links li i{ font-size: var(--fn-20);}
+.footer .social-links li a{ width: 41px; height: 41px; line-height: 41px;}
+.core-business .business-data .paragraph{ margin-top: 20px;}
+.core-business .bridgs .title-section h2{ font-size: var(--fn-24);}
+.navbar-toggler:focus{ box-shadow: none;}
+.navbar-toggler-icon i{ color: var(--secendary-text);}
+}
+@media(max-width:767px){
+header{ position: initial; padding: 10px 0;}    
+.container{ max-width: 100%;}
+.charirman-massage .chairman-picture img{ width: 100%;}
+.about-section .about-content { padding-left: 0;}
+.about-section .about-content .box-content { width: 100%; border: none;}
+.core-business .business-data{ min-height: auto;}
+.core-business .bridgs .title-section{  width: 50%;}
+.landmark-project .title-col{ padding: 0 15px;}
+.landmark-project .tab-section .nav-tabs{ right: 15px; top: 18px;}
+.hero-banner h2 { font-size: var(--fn-24); }
+.record ul{ display: initial;}
+.record ul li{ display: inline-block; width: 48%; margin-bottom: 15px;}
+.landmark-project .tab-section{ padding: 30px 15px;}
+.landmark-project .tab-section .list-of-project{ display: initial;}
+.landmark-project .tab-section .list-of-project li{ display: inline-block; width: 48%;}
+.client-partner ul{ display: initial; text-align: center;}
+.client-partner ul li{ margin: 0; padding: 15px 0;}
+.core-business .bridgs{ padding: 50px 15px 35px 15px;}
+.hero-banner span::after{ top: 0;}
+.hero-banner span{ bottom: 10px; right: 15px;}
+.landmark-project .tab-section .nav-tabs .nav-link{ padding: 5px 10px;}
+
+.core-business .business-data{ padding-left: 15px;}
+.landmark-project .tab-section .list-of-project a span.number{ font-size: var(--fn-24); line-height: var(--fn-24);}
+}
+@media(max-width:480px){
+    .record ul li{ display: block; width: 100%;}
+    .landmark-project .tab-section .list-of-project li{ display: block; width: 100%;}
+}
